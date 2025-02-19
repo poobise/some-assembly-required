@@ -13,7 +13,7 @@ public class ServerConfig {
         maximumSandwichHeight = builder
                 .comment("The maximum amount of items a sandwich can contain")
                 .translation(SomeAssemblyRequired.MOD_ID + ".config.server.maximum_sandwich_height")
-                .defineInRange("maximum_sandwich_height", 32, 2, Integer.MAX_VALUE);
+                .defineInRange("maximum_sandwich_height", Integer.MAX_VALUE, 2, Integer.MAX_VALUE);
 
         generateChestLoot = builder
                 .comment("Whether randomly generated sandwiches should be added to chests in villages and some other locations")
